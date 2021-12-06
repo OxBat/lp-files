@@ -1,0 +1,19 @@
+dn: olcDatabase={2}mdb,cn=config
+objectClass: olcDatabaseConfig
+objectClass: olcMdbConfig
+olcDatabase: {2}mdb
+olcSuffix: 
+olcDbDirectory: 
+olcRootDN: 
+olcRootPW: 
+olcDbIndex: cn,sn,uid pres,eq,approx,sub
+olcDbIndex: objectClass eq
+olcAccess: to attrs=userPassword
+  by self write
+  by anonymous auth
+  by dn.base=""
+  by * none
+olcAccess: to *
+  by self write
+  by dn.base="" write
+  by * read

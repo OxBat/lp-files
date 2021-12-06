@@ -1,0 +1,72 @@
+# noeud racine
+dn: dc=societe,dc=com
+dc: societe
+ObjectClass: dcObject
+ObjectClass: organizationalUnit
+ou: Notre Societe
+
+dn: ou=Angleterre,dc=societe,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Angleterre
+
+dn: ou=Sales,ou=Angleterre,dc=societe,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Sales
+
+dn: cn=Sales Director,ou=Sales,ou=Angleterre,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Sales Director
+sn: Smith
+
+dn: ou=France,dc=societe,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: France
+
+dn: cn=Directeur general,ou=France,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Marteau
+sn: Bernard
+telephoneNumber: 12345678
+telephoneNumber: 87654321
+
+dn: ou=Ventes,ou=France,dc=societe,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Vente
+
+dn: cn=Directeur,ou=Ventes,ou=France,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Directeur des Ventes
+sn: Martin
+
+dn: cn=Gates,ou=Ventes,ou=France,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Gates
+sn: Bill
+
+dn: cn=dubois,ou=Ventes,ou=France,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Dubois
+sn: Stephanie
+
+dn: ou=Recherche,ou=France,dc=societe,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: Recherche
+
+dn: cn=dupont,ou=Recherche,ou=France,dc=societe,dc=com
+objectClass: person
+objectClass: top
+cn: Dupont
+sn: Jean
+
+
+
